@@ -27,6 +27,7 @@ const TaskOne = () => {
       console.log("yup working all fine");
     }
     setPassword(e);
+    setTypePassword(false);
   };
   return (
     <div className="task-one-wrapper">
@@ -57,14 +58,16 @@ const TaskOne = () => {
           </div>
           <div className="form-input">
             <TextField
-              onFocus={false}
               name={"Password"}
               onChange={(e) => {
                 handlePassword(e);
               }}
-              onblur={() => setTypePassword(false)}
+              onblur={() => {
+                setTypePassword(true);
+                console.log("blurrr", typePassword);
+              }}
               value={password}
-              type={"number"}
+              type={typePassword ? "Password" : "number"}
               placeHolder="Password.."
             />
           </div>
