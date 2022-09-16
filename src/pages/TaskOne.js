@@ -24,7 +24,6 @@ const TaskOne = () => {
   const handlePassword = (e) => {
     const onlyNumber = "0 1 2 3 4 5 6 7 8 9";
     if (onlyNumber.includes(e)) {
-      console.log("yup working all fine");
     }
     setPassword(e);
     setTypePassword(false);
@@ -47,6 +46,7 @@ const TaskOne = () => {
             <TextField
               autocomplete={"false"}
               onFocus={false}
+              onEnter={(e) => console.log(e)}
               name={"Username"}
               onChange={(e) => {
                 handleUsername(e);
@@ -58,13 +58,13 @@ const TaskOne = () => {
           </div>
           <div className="form-input">
             <TextField
+              onFocus={false}
               name={"Password"}
               onChange={(e) => {
                 handlePassword(e);
               }}
               onblur={() => {
                 setTypePassword(true);
-                console.log("blurrr", typePassword);
               }}
               value={password}
               type={typePassword ? "Password" : "number"}
