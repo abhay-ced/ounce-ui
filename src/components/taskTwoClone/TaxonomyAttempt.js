@@ -4,7 +4,6 @@ import { shortData, stringData } from "../../pages/taskTwo/stringData";
 import "./taskTwoClone.css";
 
 const TaxonomyAttempt = () => {
-  const [allData, setAllData] = useState([]);
   const [lvl1Data, setLvl1Data] = useState([]);
   const [lvl2Data, setLvl2Data] = useState([]);
   const [lvl3Data, setLvl3Data] = useState([]);
@@ -17,13 +16,12 @@ const TaxonomyAttempt = () => {
   const [lvl4Val, setLvl4Val] = useState("");
   const [lvl5Val, setLvl5Val] = useState("");
   const [lvl6Val, setLvl6Val] = useState("");
-  const [selectMap, setSelectMap] = useState([]);
+  const [allData, setAllData] = useState([]);
 
   const shortArr = stringData.trim().split("\n");
   useEffect(() => {
     let level = [];
     for (let el of shortArr) {
-      // console.log("ds", el);
       if (!el.includes(">")) {
         level.push({
           label: el,
@@ -32,14 +30,14 @@ const TaxonomyAttempt = () => {
       }
       setAllData(shortArr);
       setLvl1Data(level);
-      setSelectMap([...selectMap, level]);
     }
   }, []);
 
   const handleMultipleLevel = (lbl, catlLevel) => {
     const check = [];
     for (const elem of allData) {
-      if (elem.includes(lbl) && elem.includes(">")) {
+      //   if (elem.includes(lbl) && elem.includes(">")) { // old approach
+      if (elem.includes(lbl)) {
         const arr = elem.trim().split(">");
         const found = check.some(
           (el) => el?.label?.trim() === arr[catlLevel]?.trim()
@@ -56,7 +54,6 @@ const TaxonomyAttempt = () => {
     if (catlLevel === 1) {
       setLvl1Val(lbl);
       setLvl2Data(check);
-      setSelectMap([...selectMap, check]);
       setLvl3Data("");
       setLvl4Data("");
       setLvl5Data("");
@@ -65,7 +62,6 @@ const TaxonomyAttempt = () => {
     if (catlLevel === 2) {
       setLvl2Val(lbl);
       setLvl3Data(check);
-      setSelectMap([...selectMap, check]);
       setLvl4Data("");
       setLvl5Data("");
       setLvl6Data("");
@@ -73,29 +69,21 @@ const TaxonomyAttempt = () => {
     if (catlLevel === 3) {
       setLvl3Val(lbl);
       setLvl4Data(check);
-      setSelectMap([...selectMap, check]);
       setLvl5Data("");
       setLvl6Data("");
     }
     if (catlLevel === 4) {
       setLvl4Val(lbl);
       setLvl5Data(check);
-      setSelectMap([...selectMap, check]);
       setLvl6Data("");
     }
     if (catlLevel === 5) {
       setLvl5Val(lbl);
       setLvl6Data(check);
-      setSelectMap([...selectMap, check]);
     }
     if (catlLevel === 6) {
       setLvl6Val(lbl);
-      setSelectMap([...selectMap, check]);
     }
-  };
-
-  const handleThirdLevel = (lbl) => {
-    setLvl2Val(lbl);
   };
 
   //select options
@@ -142,20 +130,11 @@ const TaxonomyAttempt = () => {
     },
   ];
 
-  console.log(
-    "sA",
-    selectMap
-    // lvl1Data.length,
-    // lvl2Data.length,
-    // lvl3Data.length,
-    // lvl4Data.length,
-    // lvl5Data.length
-  );
-
   return (
     <div className="dropdown-wrapper">
       <Card>
         <Select
+          searchEable
           dropDownheight={600}
           name="Select top level"
           onChange={(e) => handleMultipleLevel(e, 1)}
