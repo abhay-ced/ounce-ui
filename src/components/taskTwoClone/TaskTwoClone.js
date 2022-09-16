@@ -4,9 +4,11 @@ import { shortData, stringData } from "../../pages/taskTwo/stringData";
 
 const TaskTwoClone = () => {
   // step 1. make the array of the given string values.
-  const shortDataArray = stringData
+  const shortDataArray = shortData
     .split("\n")
     .map((item) => item.split(">").map((item) => item.trim()));
+
+  console.log(shortDataArray);
 
   // Step 2. Make the one reccursive object of the all arrays.
   let obj = {};

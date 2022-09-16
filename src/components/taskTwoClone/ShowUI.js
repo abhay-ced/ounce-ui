@@ -5,9 +5,7 @@ const ShowUI = ({ obj }) => {
   const [show, setShow] = useState(false);
   const [id, setId] = useState(0);
   const entries = Object.keys(obj);
-  const [options, setOptions] = useState([]);
 
-  console.log(options);
   return (
     <div>
       {entries &&
@@ -18,7 +16,6 @@ const ShowUI = ({ obj }) => {
               style={{ margin: "24px" }}
               onClick={(e) => {
                 e.stopPropagation();
-                setOptions(item);
                 setShow(!show);
                 setId(ind);
               }}

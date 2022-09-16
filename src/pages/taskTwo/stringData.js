@@ -8,9 +8,25 @@ Animals & Pet Supplies > Pet Supplies > Cat Supplies > Cat Litter Box Mats
 Animals & Pet Supplies > Pet Supplies > Cat Supplies > Cat Litter Boxes
 Animals & Pet Supplies > Pet Supplies > Cat Supplies > Cat Toys
 Animals & Pet Supplies > Pet Supplies > Cat Supplies > Cat Treats
-Animals & Pet Supplies > Pet Supplies > Dog Supplies`;
+Animals & Pet Supplies > Pet Supplies > Dog Supplies
+Apparel & Accessories > Clothing > Activewear > American Football Pants
+Apparel & Accessories > Clothing > Activewear > Bicycle Activewear
+Arts & Entertainment > Hobbies & Creative Arts > Arts & Crafts > Art & Crafting Materials > Crafting Fibers
+Arts & Entertainment > Hobbies & Creative Arts > Arts & Crafts > Art & Crafting Materials > Crafting Fibers > Jewelry & Beading Cord
+Arts & Entertainment > Hobbies & Creative Arts > Arts & Crafts > Art & Crafting Materials > Crafting Fibers > Thread & Floss
+Arts & Entertainment > Hobbies & Creative Arts > Arts & Crafts > Art & Crafting Materials > Crafting Fibers > Unspun Fiber
+Arts & Entertainment > Hobbies & Creative Arts > Arts & Crafts > Art & Crafting Materials > Crafting Fibers > Yarn
+Arts & Entertainment > Hobbies & Creative Arts > Arts & Crafts > Art & Crafting Materials > Crafting Wir
+Baby & Toddler > Baby Health
+Baby & Toddler > Baby Health > Baby Health & Grooming Kits
+Baby & Toddler > Baby Health > Nasal Aspirators
+Baby & Toddler > Baby Health > Pacifier Clips & Holders
+Baby & Toddler > Baby Health > Pacifier Wipes
+Baby & Toddler > Baby Health > Pacifiers & Teethers
+Baby & Toddler > Baby Safetye`;
 
-export const stringData = `Animals & Pet Supplies
+export const stringData = `
+Animals & Pet Supplies
 Animals & Pet Supplies > Live Animals
 Animals & Pet Supplies > Pet Supplies
 Animals & Pet Supplies > Pet Supplies > Bird Supplies
