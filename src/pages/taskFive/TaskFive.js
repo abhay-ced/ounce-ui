@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Select, Card, Tag } from "@cedcommerce/ounce-ui";
 import { shortData, stringData } from "../../pages/taskTwo/stringData";
-// import "./taskTwoClone.css";
+import "./taskFive.css";
 
 const TaskFive = () => {
   const [lvl1Data, setLvl1Data] = useState([]);
@@ -181,11 +181,7 @@ const TaskFive = () => {
   return (
     <div className="dropdown-wrapper">
       <Card title={"Taxonomy Dropdown with Badges"}>
-        <div
-          style={{
-            lineHeight: "3",
-          }}
-        >
+        <div className="tag-wrapper">
           {lvl1Val && <Tag destroy={() => handleTag(1)}>{lvl1Val} </Tag>}
           {lvl2Val && <Tag destroy={() => handleTag(2)}>{lvl2Val} </Tag>}
           {lvl3Val && <Tag destroy={() => handleTag(3)}>{lvl3Val} </Tag>}
