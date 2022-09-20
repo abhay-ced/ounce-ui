@@ -1,4 +1,11 @@
 import "./App.css";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Switch,
+  Route,
+  Link,
+} from "react-router-dom";
 import TaskTwoClone from "./components/taskTwoClone/TaskTwoClone";
 import TaskOne from "./pages/TaskOne";
 import TaskTwo from "./pages/taskTwo/TaskTwo";
@@ -8,15 +15,16 @@ import TaxonomyListSelect from "./components/taskTwoClone/TaxonomySelectList";
 import TaskThree from "./pages/taskThree/TaskThree";
 function App() {
   return (
-    <div className="App">
-      <TaskThree />
-      {/* <Notification /> */}
-      {/* <TaskOne /> */}
-      {/* <TaskTwo /> */}
-      {/* <TaskTwoClone /> */}
-      {/* <TaxonomyAttempt /> */}
-      {/* <TaxonomyListSelect /> */}
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<TaskOne />}></Route>
+          <Route path="/tasktwo" element={<TaskTwo />}></Route>
+          <Route path="/taxonomy" element={<TaxonomyAttempt />}></Route>
+          <Route path="/select-api" element={<TaskThree />}></Route>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
