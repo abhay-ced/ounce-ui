@@ -89,7 +89,49 @@ const TaskFive = () => {
   //function to handle the tags
 
   const handleTag = (id) => {
-    console.log("remove the value of select", id);
+    if (id === 1) {
+      setLvl1Val("");
+      setLvl2Data();
+      setLvl2Val("");
+      setLvl3Data("");
+      setLvl3Val("");
+      setLvl4Data("");
+      setLvl4Val("");
+      setLvl5Data("");
+      setLvl5Val("");
+      setLvl6Data("");
+      setLvl6Val("");
+    } else if (id === 2) {
+      setLvl2Val("");
+      setLvl3Data("");
+      setLvl3Val("");
+      setLvl4Data("");
+      setLvl4Val("");
+      setLvl5Data("");
+      setLvl5Val("");
+      setLvl6Data("");
+      setLvl6Val("");
+    } else if (id === 3) {
+      setLvl3Val("");
+      setLvl4Data("");
+      setLvl4Val("");
+      setLvl5Data("");
+      setLvl5Val("");
+      setLvl6Data("");
+      setLvl6Val("");
+    } else if (id === 4) {
+      setLvl4Val("");
+      setLvl5Data("");
+      setLvl5Val("");
+      setLvl6Data("");
+      setLvl6Val("");
+    } else if (id === 5) {
+      setLvl5Val("");
+      setLvl6Data("");
+      setLvl6Val("");
+    } else if (id === 6) {
+      setLvl6Val("");
+    }
   };
 
   //select options
