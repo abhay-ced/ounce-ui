@@ -6,4 +6,5 @@
   padding: 2em 2em;
   display: flex;
   justify-content: space-between;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
