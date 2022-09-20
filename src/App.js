@@ -14,7 +14,7 @@ function App() {
       {/* <TaskOne /> */}
       {/* <TaskTwo /> */}
       {/* <TaskTwoClone /> */}
-      <TaxonomyAttempt />
+      {/* <TaxonomyAttempt /> */}
       {/* <TaxonomyListSelect /> */}
     </div>
   );
