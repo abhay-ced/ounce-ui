@@ -13,6 +13,7 @@ import Notification from "./components/notifications/Notification";
 import TaxonomyAttempt from "./components/taskTwoClone/TaxonomyAttempt";
 import TaxonomyListSelect from "./components/taskTwoClone/TaxonomySelectList";
 import TaskThree from "./pages/taskThree/TaskThree";
+import TaskFive from "./pages/taskFive/TaskFive";
 function App() {
   return (
     <Router>
@@ -22,6 +23,7 @@ function App() {
           <Route path="/tasktwo" element={<TaskTwo />}></Route>
           <Route path="/taxonomy" element={<TaxonomyAttempt />}></Route>
           <Route path="/select-api" element={<TaskThree />}></Route>
+          <Route path="/badge" element={<TaskFive />}></Route>
         </Routes>
       </div>
     </Router>
