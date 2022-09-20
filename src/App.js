@@ -14,17 +14,30 @@ import TaxonomyAttempt from "./components/taskTwoClone/TaxonomyAttempt";
 import TaxonomyListSelect from "./components/taskTwoClone/TaxonomySelectList";
 import TaskThree from "./pages/taskThree/TaskThree";
 import TaskFive from "./pages/taskFive/TaskFive";
+import HeaderLayout from "./components/headerLayout/HeaderLayout";
 function App() {
   return (
     <Router>
       <div className="App">
-        <Routes>
-          <Route path="/" element={<TaskOne />}></Route>
-          <Route path="/tasktwo" element={<TaskTwo />}></Route>
-          <Route path="/taxonomy" element={<TaxonomyAttempt />}></Route>
-          <Route path="/select-api" element={<TaskThree />}></Route>
-          <Route path="/badge" element={<TaskFive />}></Route>
-        </Routes>
+        <HeaderLayout>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <h1 style={{ textAlign: "center" }}>
+                  Click on navigation to see the other tasks
+                </h1>
+              }
+            >
+              {" "}
+            </Route>
+            <Route path="/form" element={<TaskOne />}></Route>
+            <Route path="/tasktwo" element={<TaskTwo />}></Route>
+            <Route path="/taxonomy" element={<TaxonomyAttempt />}></Route>
+            <Route path="/select-api" element={<TaskThree />}></Route>
+            <Route path="/badge" element={<TaskFive />}></Route>
+          </Routes>
+        </HeaderLayout>
       </div>
     </Router>
   );

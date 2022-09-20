@@ -1,17 +1,5 @@
-.task-one-wrapper {
-  width: 40%;
-
-  margin: 3em auto;
-  min-height: 200px;
-}
-.form-input {
-  margin: 1em 0;
-}
-.text {
-  padding: 4em;
-}
 .header {
-  width: 100%;
+  width: 70%;
   margin: 2em auto;
   background-color: white;
   border-radius: 5px;

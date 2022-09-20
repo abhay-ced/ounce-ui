@@ -28,18 +28,7 @@ const TaskTwo = () => {
   const a2 = shortData
     .split("\n")
     .map((array) => array.split(">").map((arr2) => arr2.trim()));
-  // console.log(a2);
 
-  // function stringToObject(obj) {
-  //   for (let element of arrayOfAllLines) {
-  //     convertToObject(obj, element);
-  //   }
-
-  //   function convertToObject(obj, element, i = 0) {
-  //     if (i > element[i].length - 1) {
-  //     }
-  //   }
-  // }
   function stringToObject(obj) {
     for (let element of arrayOfAllLines) {
       convertToObject(obj, element);
@@ -59,20 +48,11 @@ const TaskTwo = () => {
   }
 
   stringToObject(obj);
-  console.log(Object.keys(obj).length);
 
   return (
     <div>
       <h1 className="main-heading"> Texonomy Application</h1>
       <ShowButtons obj={obj} />
-      {/* {entries &&
-        entries.map((item, index) => {
-          return (
-            <div key={index} style={{ margin: "12px" }}>
-              <Button>{item}</Button>
-            </div>
-          );
-        })} */}
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Card,
   FlexLayout,
@@ -30,6 +31,20 @@ const TaskOne = () => {
   };
   return (
     <div className="task-one-wrapper">
+      {/* <header className="header">
+        <div>
+          <Link to="/tasktwo">Taxonomy Button</Link>
+        </div>
+        <div>
+          <Link to="/taxonomy">Taxonomy Dropdown</Link>
+        </div>
+        <div>
+          <Link to="/select-api">SelectList From API</Link>
+        </div>
+        <div>
+          <Link to="/badge">Taxonomy Dropdown with badge</Link>
+        </div>
+      </header> */}
       <Card>
         <TextStyles
           alignment="center"
