@@ -42,21 +42,3 @@ const TaskTwoClone = () => {
 };
 
 export default TaskTwoClone;
-
-//   function stringToObject(obj) {
-//     for (let element of shortDataArray) {
-//       convertToObject(obj, element);
-//     }
-
-//     function convertToObject(obj, arr, index = 0) {
-//       if (index > arr.length - 1) {
-//         return;
-//       }
-//       if (arr[index] in obj) {
-//         convertToObject(obj[arr[index]], arr, index + 1);
-//       } else {
-//         obj[arr[index]] = {};
-//         convertToObject(obj[arr[index]], arr, index + 1);
-//       }
-//     }
-//   }

@@ -6,9 +6,6 @@ import {
 import "react-notifications/lib/notifications.css";
 
 const Notification = () => {
-  //   const NotificationContainer = window.ReactNotifications.NotificationContainer;
-  //   const NotificationManager = window.ReactNotifications.NotificationManager;
-
   const createNotification = (type) => {
     return () => {
       switch (type) {

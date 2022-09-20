@@ -5,8 +5,6 @@ const SelectList = ({ data }) => {
   // console.log("data", data);
   const [selectOptions, setSelectOptions] = useState([]);
   const [optVal, setOptVal] = useState("");
-  const [cityData, setCotyData] = useState([]);
-  const [singleCity, setSingleCity] = useState("");
   useEffect(() => {
     let opt = [];
     if (data) {

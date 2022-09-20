@@ -6,21 +6,6 @@ import "./taskTwo.css";
 
 const TaskTwo = () => {
   const [objData, setObjData] = useState();
-  // const [apiData, setApiData] = useState(null);
-  // const fetchingString = async () => {
-  //   const fetchData = fetch(
-  //     "https://www.google.com/basepages/producttype/taxonomy.en-US.txt"
-  //   )
-  //     .then((resp) => resp.text())
-  //     .then((data) => setApiData(data));
-  // };
-
-  // useEffect(() => {
-  //   fetchingString();
-  // }, []);
-
-  // console.log("line 18", apiData);
-
   let obj = {};
   const arrayOfAllLines = stringData
     .split("\n")

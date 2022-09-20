@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, TextStyles, Select } from "@cedcommerce/ounce-ui";
+import { Button, TextStyles } from "@cedcommerce/ounce-ui";
 
 const ShowUI = ({ obj }) => {
   const [show, setShow] = useState(false);
@@ -23,8 +23,6 @@ const ShowUI = ({ obj }) => {
               {Object.keys(obj[item]).length !== 0 ? (
                 <Button>{item}</Button>
               ) : (
-                // <Select options={item} />
-                // <Button>{item}</Button>
                 <TextStyles
                   alignment="left"
                   fontweight="normal"

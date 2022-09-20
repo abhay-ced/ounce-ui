@@ -1,17 +1,8 @@
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Switch,
-  Route,
-  Link,
-} from "react-router-dom";
-import TaskTwoClone from "./components/taskTwoClone/TaskTwoClone";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import TaskOne from "./pages/TaskOne";
 import TaskTwo from "./pages/taskTwo/TaskTwo";
-import Notification from "./components/notifications/Notification";
 import TaxonomyAttempt from "./components/taskTwoClone/TaxonomyAttempt";
-import TaxonomyListSelect from "./components/taskTwoClone/TaxonomySelectList";
 import TaskThree from "./pages/taskThree/TaskThree";
 import TaskFive from "./pages/taskFive/TaskFive";
 import HeaderLayout from "./components/headerLayout/HeaderLayout";
@@ -28,9 +19,7 @@ function App() {
                   Click on navigation to see the other tasks
                 </h1>
               }
-            >
-              {" "}
-            </Route>
+            ></Route>
             <Route path="/form" element={<TaskOne />}></Route>
             <Route path="/tasktwo" element={<TaskTwo />}></Route>
             <Route path="/taxonomy" element={<TaxonomyAttempt />}></Route>
