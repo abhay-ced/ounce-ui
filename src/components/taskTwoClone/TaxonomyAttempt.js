@@ -18,13 +18,8 @@ const TaxonomyAttempt = () => {
   const [lvl6Val, setLvl6Val] = useState("");
   const [allData, setAllData] = useState([]);
 
-  const showResult = (num) => {
-    console.log(num * num);
-  };
-
   const shortArr = stringData.trim().split("\n");
   useEffect(() => {
-    showResult(7);
     let level = [];
     for (let el of shortArr) {
       if (!el.includes(">")) {

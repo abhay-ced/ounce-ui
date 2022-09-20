@@ -4,7 +4,7 @@ import { shortData, stringData } from "../../pages/taskTwo/stringData";
 
 const TaskTwoClone = () => {
   // step 1. make the array of the given string values.
-  const shortDataArray = shortData
+  const shortDataArray = stringData
     .split("\n")
     .map((item) => item.split(">").map((item) => item.trim()));
 

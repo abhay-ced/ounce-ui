@@ -5,9 +5,11 @@ import TaskTwo from "./pages/taskTwo/TaskTwo";
 import Notification from "./components/notifications/Notification";
 import TaxonomyAttempt from "./components/taskTwoClone/TaxonomyAttempt";
 import TaxonomyListSelect from "./components/taskTwoClone/TaxonomySelectList";
+import TaskThree from "./pages/taskThree/TaskThree";
 function App() {
   return (
     <div className="App">
+      <TaskThree />
       {/* <Notification /> */}
       {/* <TaskOne /> */}
       {/* <TaskTwo /> */}
