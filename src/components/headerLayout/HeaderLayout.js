@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import "./headerLayout.css";
 
 const HeaderLayout = ({ children }) => {
+  const dateFormatter = new Intl.DateTimeFormat(undefined, {
+    dateStyle: "medium",
+    timeStyle: "medium",
+  });
   return (
     <div>
       <header className="header">
@@ -20,6 +24,9 @@ const HeaderLayout = ({ children }) => {
         </div>
         <div>
           <Link to="/badge">Taxonomy Dropdown with badge</Link>
+        </div>
+        <div style={{ color: "blue" }}>
+          {dateFormatter.format(Date.parse(new Date()))}
         </div>
       </header>
 
